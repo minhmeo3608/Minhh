@@ -59,8 +59,8 @@ spawn(function()
     end)
 end)
 local Window = Fluent:CreateWindow({
-    Title = "Banana Cat Hub-Meme Sea",
-    SubTitle = "by Honglamx",
+    Title = "Minh Skid Banana Cat Hub-Meme Sea ",
+    SubTitle = "by Minh script",
     TabWidth = 125,
     Size = UDim2.fromOffset(500, 350),
     Acrylic = false,             -- The blur may be detectable, setting this to false disables blur entirely
