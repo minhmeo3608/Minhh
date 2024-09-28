@@ -1,41 +1,3 @@
-setfpscap(360)
-print("RobloXploits")
-local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
-OrionLib:MakeNotification({
-Name = "Notification",
-Content = "Hi Everyone, We Are From RobloXploits",
-Image = "rbxassetid://4483345998",
-Time = 10
-})
-print("RobloXploits")
-OrionLib:MakeNotification({
-Name = "Notification",
-Content = "Thank You For Using Our Script",
-Image = "rbxassetid://4483345998",
-Time = 10
-})
-print("RobloXploits")
-OrionLib:MakeNotification({
-Name = "Notification",
-Content = "Please Enjoy Our Script",
-Image = "rbxassetid://4483345998",
-Time = 10
-})
-print("RobloXploits")
-OrionLib:MakeNotification({
-Name = "Our Discord",
-Content = "https://discord.gg/7eT6S3s4Ed",
-Image = "rbxassetid://4483345998",
-Time = 10
-})
-print("RobloXploits")
-OrionLib:MakeNotification({
-Name = "Our Discord",
-Content = "https://discord.gg/C6VaVKsapN",
-Image = "rbxassetid://4483345998",
-Time = 10
-})
-print("RobloXploits")
 repeat wait() until game:IsLoaded()
 pcall(function()
     repeat
@@ -46,9 +8,9 @@ pcall(function()
     until not game:GetService("Players").LocalPlayer.PlayerGui.LoadingGui.Enabled
 end)
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
-if game.CoreGui:FindFirstChild("RobloXploits Hub") then
+if game.CoreGui:FindFirstChild("Banana Cat Hub Btn") then
     pcall(function()
-        game.CoreGui["RobloXploits Hub"]:Destroy()
+        game.CoreGui["Banana Cat Hub Btn"]:Destroy()
         game.CoreGui.ScreenGui:Destroy()
     end)
 end
@@ -56,7 +18,7 @@ spawn(function()
     getgenv().UIToggled = true
     HideGui = Instance.new('ScreenGui')
     HideGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-    HideGui.Name = 'RobloXploits Hub'
+    HideGui.Name = 'Banana Cat Hub Btn'
     HideGui.Enabled = true
     HideGui.Parent = game:GetService('CoreGui')
 
@@ -64,19 +26,19 @@ spawn(function()
     btnHideFrame.AnchorPoint = Vector2.new(0, 1)
     btnHideFrame.Size = UDim2.new(0, 50, 0, 50)
     btnHideFrame.Position = UDim2.new(0, 0.5, 0.2, 0)
-    btnHideFrame.Name = "Axionix"
+    btnHideFrame.Name = "dut dit"
     btnHideFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     btnHideFrame.BackgroundTransparency = getgenv().UIToggled and 0 or .25
 
     local btnHide = Instance.new('TextButton', btnHideFrame)
-    btnHide.BackgroundTransparency = 0
+    btnHide.BackgroundTransparency = 1
     btnHide.Text = ""
     btnHide.Size = UDim2.new(1, 0, 1, 0)
 
     local imgHide = Instance.new('ImageLabel', btnHideFrame)
     imgHide.AnchorPoint = Vector2.new(0, 0)
-    imgHide.Image = "rbxassetid://1917750552"
-    imgHide.BackgroundTransparency = 0
+    imgHide.Image = "rbxassetid://5009915795"
+    imgHide.BackgroundTransparency = 1
     imgHide.Size = UDim2.new(0, getgenv().UIToggled and 40 or 30, 0, getgenv().UIToggled and 40 or 30)
     imgHide.AnchorPoint = Vector2.new(.5, .5)
     imgHide.Position = UDim2.new(.5, 0, .5, 0)
@@ -97,8 +59,8 @@ spawn(function()
     end)
 end)
 local Window = Fluent:CreateWindow({
-    Title = "RobloXploits Hub-Meme Sea",
-    SubTitle = "Make By Axionix",
+    Title = "Banana Cat Hub-Meme Sea",
+    SubTitle = "by Honglamx",
     TabWidth = 125,
     Size = UDim2.fromOffset(500, 350),
     Acrylic = false,             -- The blur may be detectable, setting this to false disables blur entirely
@@ -133,7 +95,7 @@ local Config = {
     ["AutoSkillKeyCode"] = {
         ["Z"] = false
     },
-    ["Distance"] = 7,
+    ["Distance"] = 0,
     ["HoldZ"] = 0,
     ["HoldX"] = 0,
     ["HoldC"] = 0,
@@ -144,22 +106,22 @@ function Save(i, v)
     if i ~= nil then
         Config[i] = v
     end
-    if not isfolder("RobloXploits Hub") then
-        makefolder("RobloXploits Hub")
+    if not isfolder("Banana Cat Hub") then
+        makefolder("Banana Cat Hub")
     end
-    writefile("RobloXploits Hub" .. "/" .. "MemeSea-" .. game.Players.LocalPlayer.Name .. ".json",
+    writefile("Banana Cat Hub" .. "/" .. "MemeSea-" .. game.Players.LocalPlayer.Name .. ".json",
         game:GetService("HttpService"):JSONEncode(Config))
 end
 
 function read()
-    if not isfolder("RobloXploits Hub") then
-        makefolder("RobloXploits Hub")
+    if not isfolder("Banana Cat Hub") then
+        makefolder("Banana Cat Hub")
     end
-    if not pcall(function() readfile("RobloXploits Hub/MemeSea-" .. game.Players.LocalPlayer.Name .. ".json") end) then
-        writefile("RobloXploits Hub/MemeSea-" .. game.Players.LocalPlayer.Name .. ".json",
+    if not pcall(function() readfile("Banana Cat Hub/MemeSea-" .. game.Players.LocalPlayer.Name .. ".json") end) then
+        writefile("Banana Cat Hub/MemeSea-" .. game.Players.LocalPlayer.Name .. ".json",
             game:GetService("HttpService"):JSONEncode(Config))
     end
-    for key, value in pairs(game:GetService("HttpService"):JSONDecode(readfile("RobloXploits Hub/MemeSea-" .. game.Players.LocalPlayer.Name .. ".json"))) do
+    for key, value in pairs(game:GetService("HttpService"):JSONDecode(readfile("Banana Cat Hub/MemeSea-" .. game.Players.LocalPlayer.Name .. ".json"))) do
         Config[key] = value
     end
 end
@@ -769,7 +731,7 @@ do
                         :WaitForChild("Code")
                         :InvokeServer(unpack(args))
                 else
-                    notify("RobloXploits Hub Notifcation", "Code: " .. i .. " Used", 10)
+                    notify("Banana Hub Notifcation", "Code: " .. i .. " Used", 10)
                 end
             end
         end
@@ -1175,7 +1137,7 @@ do
                             .Part.Position)
                     end
                 else
-                    notify("RobloXploits Notification", "You Have PopCat Sword", 10)
+                    notify("Banana Notification", "You Have PopCat Sword", 10)
                     Options["Auto Get Pop Cat Weapon"]:SetValue(false)
                 end
             end
@@ -1203,7 +1165,7 @@ do
                         end
                     end
                 else
-                    notify("RobloXploits Notification", "You Have Floppa Sword", 10)
+                    notify("Banana Notification", "You Have Floppa Sword", 10)
                     Options["Cool Floppa Quest"]:SetValue(false)
                 end
             end
@@ -1513,7 +1475,7 @@ do
                 local MemeBeast = workspace.Monster:FindFirstChild("Meme Beast") or
                     game:GetService("ReplicatedStorage").MonsterSpawn:FindFirstChild("Meme Beast")
                 if MemeBeast and not getnameraid() and  game:GetService("Players").LocalPlayer.PlayerGui.RaidGui.RaidFrame.TimeLeft.Visible == false then
-                    notify("RobloXploits Hub Notifcation", "Meme Beast Spawned", 10)
+                    notify("Banana Hub Notifcation", "Meme Beast Spawned", 10)
                     Tp(MemeBeast)
                     click = true
                     repeat
@@ -1597,7 +1559,7 @@ do
         end
     })
     ShopTab:AddButton({
-        Title = "RobloXploits Weapon",
+        Title = "Banana Weapon",
         Callback = function()
             local args = {
                 [1] = "Weapon_Seller",
@@ -1645,5 +1607,3 @@ do
         end
     })
 end
-print("RobloXploits")
-setfpscap(360)
